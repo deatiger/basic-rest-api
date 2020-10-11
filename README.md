@@ -1,3 +1,6 @@
+## LICENSE
+The source code is licensed MIT.
+
 ## CREATE TABLE
 ```
 CREATE TABLE users (  
