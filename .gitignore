@@ -1,0 +1,10 @@
+# Local files
+/.idea/
+.DS_Store
+*.log
+app/db/database.sqlite3
+
+# Modules
+/node_modules/
+.package-lock.json
+
