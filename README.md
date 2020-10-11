@@ -1,7 +1,7 @@
 ## LICENSE
 The source code is licensed MIT.
 
-## CREATE TABLE
+## Create users table
 ```
 CREATE TABLE users (  
   id INTEGER NOT NULL PRIMARY KEY, 
@@ -13,10 +13,8 @@ CREATE TABLE users (
 );
 ```
 
-## Configure to update 'updated_at' triggered by the row's update 
-```
-CREATE TRIGGER trigger_users_updated_at AFTER UPDATE ON users
-BEGIN
-    UPDATE users SET updated_at = DATETIME('now', 'localtime') WHERE rowid == NEW.rowid;
-END;
-```
+## Create a sample data
+`INSERT INTO users (name, profile) VALUES ("torahack", "I am the front-end engineer!");`
+
+## Fetch all data from users table
+`SELECT * FROM users;`
