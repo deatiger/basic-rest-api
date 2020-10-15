@@ -13,8 +13,17 @@ CREATE TABLE users (
 );
 ```
 
-## Create a sample data
-`INSERT INTO users (name, profile) VALUES ("torahack", "I am the front-end engineer!");`
+## Create sample data
+`INSERT INTO users (name, profile) VALUES ("Subaru", "エミリアたんマジ天使！");`  
+`INSERT INTO users (name, profile) VALUES ("Emilia", "もう、スバルのオタンコナス！");`  
+`INSERT INTO users (name, profile) VALUES ("Ram", "いいえお客様、きっと生まれて来たのが間違いだわ");`  
+`INSERT INTO users (name, profile) VALUES ("Rem", "はい、スバルくんのレムです。");`  
+`INSERT INTO users (name, profile) VALUES ("Roswaal", "君は私になーぁにを望むのかな？");`  
 
 ## Fetch all data from users table
 `SELECT * FROM users;`
+
+## curl commands
+Get all users: `curl -X GET http://localhost:3000/api/v1/users`  
+Get a user by specified id: `curl -X GET http://localhost:3000/api/v1/users/3`  
+Search users: `curl -X GET http://localhost:3000/api/v1/search`  
